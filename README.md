@@ -18,8 +18,10 @@ https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n
 
 ## Technologies used
 
-HTML5
-CSS3
-Bootstrap 4
+- HTML5
+- CSS3
+- Bootstrap 4
 
 ## Live URL of solution
+
+https://fylo-data-storage-component-master-five.vercel.app/
