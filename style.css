@@ -26,5 +26,27 @@ body {
 
 .fylo {
   background-color: hsl(228, 56%, 26%);
-  border: 1px solid white;
+  padding: 2rem 3.5rem;
+  border-radius: 10px 100px 10px 10px;
+}
+
+.logo {
+  margin-bottom: 1.5rem;
+}
+
+.icons {
+  margin-left: -1.5rem;
+}
+
+.mw-65 {
+  max-width: 65vw !important;
+}
+
+.img-bg {
+  background-color: hsl(229, 57%, 11%);
+  padding: 0.75rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  height: 2.75rem;
+  width: 2.75rem;
 }
