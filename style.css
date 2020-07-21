@@ -50,3 +50,11 @@ body {
   height: 2.75rem;
   width: 2.75rem;
 }
+
+.storage {
+  background-color: hsl(228, 56%, 26%);
+  padding: 2rem 3.5rem;
+  border-radius: 10px;
+  height: 75%;
+  align-self: flex-end;
+}

@@ -39,7 +39,7 @@
   </head>
   <body>
     <section class="container d-flex align-items-center min-vh-100 mw-65">
-      <div class="row">
+      <div class="row w-100">
         <div class="col-md-4 fylo">
           <div class="row logo">
             <img src="./images/logo.svg" alt="fylo-logo" />
@@ -62,13 +62,13 @@
             />
           </div>
         </div>
-        <div class="col-md-8">
-          <!--<div class="usage-indicator">
-            <p>You’ve used 815 GB of your storage 185 GB Left 0 GB 1000 GB</p>
-          </div>-->
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
-          delectus error assumenda aliquid consequatur laboriosam itaque illo
-          dolore dignissimos unde.
+        <div class="col-md-8 storage">
+          <div class="row storage-text">You’ve used 815 GB of your storage</div>
+          <div class="row storage-indicator"></div>
+          <div class="row storage-minmax">
+            <span class="storage-min">0 GB</span>
+            <span class="storage-max">1000 GB</span>
+          </div>
         </div>
       </div>
     </section>
