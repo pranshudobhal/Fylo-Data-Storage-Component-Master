@@ -19,6 +19,11 @@ body {
   font-size: 14px;
 }
 
+.fylo-storage {
+  display: flex;
+  justify-content: space-around;
+}
+
 .usage-indicator {
   border: 1px solid red;
   display: inline;
@@ -57,4 +62,49 @@ body {
   border-radius: 10px;
   height: 75%;
   align-self: flex-end;
+}
+
+.storage-remaining {
+  position: absolute;
+  right: 5rem;
+  bottom: 6rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.progress {
+  border-radius: 15px;
+  height: 1.3rem;
+  width: 100%;
+  background-color: hsl(229, 57%, 11%);
+}
+
+.progress-bar {
+  text-align: left;
+  /*transition: width 3s ease-in 1s;*/
+  /* transition: width 5s ease; */
+  display: flex;
+  align-self: center;
+  transition: background-color 0.5s ease;
+  background-color: red;
+  border-radius: 10px;
+  height: 1rem;
+  margin-left: 2.25px;
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  animation: progress-bar-load 4s ease-out;
+}
+
+@keyframes progress-bar-load {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 75%;
+  }
 }
