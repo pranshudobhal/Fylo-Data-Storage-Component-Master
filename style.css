@@ -83,7 +83,6 @@ body {
   color: hsl(229, 7%, 55%);
   right: 4.25rem;
   bottom: 7.5rem;
-  border: 1px solid white;
   border-radius: 10px 10px 0px 10px;
   background-color: white;
   display: flex;
@@ -96,6 +95,17 @@ body {
   vertical-align: middle;
   font-size: 30px;
   color: hsl(229, 57%, 11%);
+}
+
+.storage-remaining::after {
+  position: absolute;
+  content: '';
+  width: 38px;
+  height: 18px;
+  top: 3.7rem;
+  left: 7rem;
+  background-color: white;
+  clip-path: polygon(50% 0%, 100% 100%, 100% 0);
 }
 
 .progress {
@@ -118,6 +128,18 @@ body {
     hsl(335, 100%, 65%)
   );
   animation: progress-bar-load 4s ease-out;
+}
+
+.progress-bar > span {
+  width: 12px;
+  position: relative;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  top: -0.05rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: 0.2rem;
 }
 
 @keyframes progress-bar-load {
