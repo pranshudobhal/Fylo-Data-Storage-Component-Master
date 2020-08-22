@@ -8,15 +8,18 @@ html {
 }
 
 body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+.background {
   background-color: hsl(229, 57%, 11%);
   background-image: url('./images/bg-desktop.png');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100% 50%;
-  padding: 0;
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px;
 }
 
 .fylo-storage {
@@ -43,8 +46,8 @@ body {
   margin-left: -1.5rem;
 }
 
-.mw-65 {
-  max-width: 65vw !important;
+#container-width {
+  max-width: 65vw;
 }
 
 .img-bg {
@@ -93,7 +96,7 @@ body {
 .storage-remaining > span {
   display: flex;
   vertical-align: middle;
-  font-size: 30px;
+  font-size: 36px;
   color: hsl(229, 57%, 11%);
 }
 
@@ -158,4 +161,57 @@ body {
   justify-content: space-between;
   margin-top: 0.25rem;
   color: hsl(243, 100%, 93%);
+}
+
+@media screen and (min-width: 375px) and (max-width: 575px) {
+  .background {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url('./images/bg-mobile.png');
+    background-size: auto;
+    background-position: 0% 0%;
+  }
+
+  #container-width {
+    max-width: 95vw;
+  }
+
+  .fylo-storage {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+  }
+
+  .fylo {
+    margin-bottom: 1rem;
+  }
+
+  .storage {
+    padding: 2rem 2.75rem 3rem 2.75rem;
+  }
+
+  .storage-text {
+    justify-content: center;
+  }
+
+  .storage-remaining {
+    right: 6rem;
+    top: 8rem;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .storage-remaining::after {
+    display: none;
+  }
+
+  .progress {
+    width: auto;
+  }
+
+  .progress-bar > span {
+    top: 0rem;
+  }
+
+  .storage-minmax {
+    width: auto;
+  }
 }
